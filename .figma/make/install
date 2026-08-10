@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+# Installs project dependencies. Runs at the start of every Make Local session.
+cd "$(dirname "$0")/../.."
+
+echo "Installing project dependencies (npm install)..."
+npm install
+echo "Dependencies installed."
