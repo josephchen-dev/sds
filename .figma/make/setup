@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+
+# Installs system dependencies. Runs the first time Make Local sees this repo.
+# This is a Vite + React + TypeScript project, so all it needs is Node.js (with npm).
+
+echo "Checking system dependencies..."
+
+NODE_VERSION="$(node --version 2>/dev/null || echo "none")"
+if [[ "$NODE_VERSION" == "none" ]]; then
+  echo "Node.js not found. Installing via Homebrew..."
+  if command -v brew >/dev/null 2>&1; then
+    brew install node
+  else
+    echo "Error: Node.js is required but not installed, and Homebrew is unavailable."
+    echo "Install Node.js (>=18) from https://nodejs.org and re-run."
+    exit 1
+  fi
+  NODE_VERSION="$(node --version)"
+fi
+echo "Node.js $NODE_VERSION OK"
+
+if ! command -v npm >/dev/null 2>&1; then
+  echo "Error: npm is required but not found alongside Node.js."
+  exit 1
+fi
+echo "npm $(npm --version) OK"
+
+echo "System dependencies verified."

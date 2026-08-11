@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+# Starts the Vite dev server for the app. Make Local keeps this running in the
+# background and points the browser preview at it. Port is defined in
+# vite.config.ts (8000) and mirrored in .figma/make/env.
+cd "$(dirname "$0")/../.."
+
+echo "Starting Vite dev server..."
+npm run app:dev
