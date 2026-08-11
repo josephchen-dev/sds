@@ -17,6 +17,36 @@
   --global-line-height-body: 1.6;
 }
 
+/* Warm the neutral "brand" ramp toward beige — app-level accent, not part of
+   the generated theme.css. This ramp drives the prominent panels, primary
+   buttons, and header. Lightness mirrors the original grayscale so text
+   contrast is preserved in both light and dark mode. */
+:root {
+  --sds-color-brand-100: #f4efe3;
+  --sds-color-brand-200: #e8ddc9;
+  --sds-color-brand-300: #dbcdb0;
+  --sds-color-brand-400: #bcae90;
+  --sds-color-brand-500: #857a61;
+  --sds-color-brand-600: #494334;
+  --sds-color-brand-700: #3d3729;
+  --sds-color-brand-800: #322d21;
+  --sds-color-brand-900: #221f16;
+  --sds-color-brand-1000: #14120c;
+}
+
+/* Fluid display typography — app-level, not part of the generated theme.css.
+   The large title/subtitle sizes scale down on narrow viewports and cap at
+   their original desktop values, so headings never overflow on mobile. */
+:root {
+  --sds-typography-title-hero-size: clamp(2.5rem, 5vw + 1.5rem, 4.5rem);
+  --sds-typography-title-page-size-small: clamp(1.75rem, 2.5vw + 1.25rem, 2.5rem);
+  --sds-typography-title-page-size-base: clamp(2rem, 3vw + 1.25rem, 3rem);
+  --sds-typography-title-page-size-large: clamp(2.25rem, 4vw + 1.5rem, 4rem);
+  --sds-typography-subtitle-size-small: clamp(1.25rem, 1.5vw + 0.75rem, 1.5rem);
+  --sds-typography-subtitle-size-base: clamp(1.5rem, 2vw + 1rem, 2rem);
+  --sds-typography-subtitle-size-large: clamp(1.75rem, 2.5vw + 1rem, 2.5rem);
+}
+
 .display-none-to-flex {
   display: var(--sds-responsive-display-none-to-flex) !important;
 }

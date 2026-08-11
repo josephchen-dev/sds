@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { useInView } from "hooks";
 import { Image } from "primitives";
 import { ComponentPropsWithoutRef } from "react";
 import "./section.css";
@@ -33,12 +34,15 @@ export function Section({
   ...props
 }: SectionProps) {
   const { variant = "subtle", ...spreadProps } = props;
+  const { ref, inView } = useInView<HTMLElement>();
   const classNames = clsx(
     className,
     "section",
     `section-variant-${props.variant}`,
     `section-padding-top-${paddingTop || padding}`,
     `section-padding-bottom-${paddingBottom || padding}`,
+    "section-reveal",
+    inView && "section-reveal-visible",
   );
   const image =
     props.variant === "image" ? (
@@ -54,19 +58,19 @@ export function Section({
   switch (elementType) {
     case "section":
       return (
-        <section className={classNames} {...spreadProps}>
+        <section ref={ref} className={classNames} {...spreadProps}>
           {image} {children}
         </section>
       );
     case "header":
       return (
-        <header className={classNames} {...spreadProps}>
+        <header ref={ref} className={classNames} {...spreadProps}>
           {image} {children}
         </header>
       );
     case "footer":
       return (
-        <footer className={classNames} {...spreadProps}>
+        <footer ref={ref} className={classNames} {...spreadProps}>
           {image} {children}
         </footer>
       );
