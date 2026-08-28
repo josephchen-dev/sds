@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Slider",
+    "filePath": "src/ui/primitives/Slider/Slider.tsx"
+  },
+  "codeProperties": {
+    "minValue": {
+      "type": "number",
+      "name": "Min Value"
+    },
+    "maxValue": {
+      "type": "number",
+      "name": "Max Value"
+    },
+    "step": {
+      "type": "number",
+      "name": "Step"
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "name": "Is Disabled"
+    }
+  }
+}

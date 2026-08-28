@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TableCell",
+    "filePath": "src/ui/primitives/Table/Table.tsx"
+  },
+  "codeProperties": {
+    "align": {
+      "type": "string",
+      "name": "Align",
+      "defaultValue": "start",
+      "options": [
+        "start",
+        "center",
+        "right"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "start": "Start",
+          "center": "Center",
+          "right": "Right"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TestimonialCard",
+    "filePath": "src/ui/compositions/Cards/Cards.tsx"
+  },
+  "codeProperties": {
+    "heading": {
+      "type": "string",
+      "name": "Heading"
+    },
+    "name": {
+      "type": "string",
+      "name": "Name"
+    },
+    "username": {
+      "type": "string",
+      "name": "Username"
+    }
+  }
+}

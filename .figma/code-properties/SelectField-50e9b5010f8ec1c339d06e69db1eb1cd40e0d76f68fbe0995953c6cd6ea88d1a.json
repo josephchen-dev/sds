@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "SelectField",
+    "filePath": "src/ui/primitives/Select/Select.tsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label"
+    },
+    "description": {
+      "type": "string",
+      "name": "Description"
+    },
+    "errorMessage": {
+      "type": "string",
+      "name": "Error Message"
+    },
+    "placeholder": {
+      "type": "string",
+      "name": "Placeholder"
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "name": "Is Disabled"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "name": "Is Required"
+    },
+    "isInvalid": {
+      "type": "boolean",
+      "name": "Is Invalid"
+    }
+  }
+}

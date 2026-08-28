@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Image",
+    "filePath": "src/ui/primitives/Image/Image.tsx"
+  },
+  "codeProperties": {
+    "alt": {
+      "type": "string",
+      "name": "Alt Text"
+    },
+    "aspectRatio": {
+      "type": "string",
+      "name": "Aspect Ratio",
+      "defaultValue": "natural",
+      "options": [
+        "1-1",
+        "16-9",
+        "4-3",
+        "fill",
+        "natural"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "1-1": "1:1",
+          "16-9": "16:9",
+          "4-3": "4:3",
+          "fill": "Fill",
+          "natural": "Natural"
+        }
+      }
+    },
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "natural",
+      "options": [
+        "small",
+        "medium",
+        "large",
+        "fill",
+        "natural"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "small": "Small",
+          "medium": "Medium",
+          "large": "Large",
+          "fill": "Fill",
+          "natural": "Natural"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "rounded",
+      "options": [
+        "default",
+        "rounded"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "rounded": "Rounded"
+        }
+      }
+    }
+  }
+}

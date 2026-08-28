@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Tabs",
+    "filePath": "src/ui/primitives/Tab/Tab.tsx"
+  },
+  "codeProperties": {
+    "disabledKeys": {
+      "type": "string",
+      "name": "Disabled Keys"
+    }
+  }
+}

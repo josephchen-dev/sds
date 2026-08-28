@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "DestructiveIconButton",
+    "filePath": "src/ui/primitives/IconButton/IconButton.tsx"
+  },
+  "codeProperties": {
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "medium",
+      "options": [
+        "small",
+        "medium"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "small": "Small",
+          "medium": "Medium"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "danger-primary",
+      "options": [
+        "danger-primary",
+        "danger-subtle"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "danger-primary": "Danger Primary",
+          "danger-subtle": "Danger Subtle"
+        }
+      }
+    }
+  }
+}

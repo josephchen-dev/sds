@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "FlexItem",
+    "filePath": "src/ui/layout/Flex/Flex.tsx"
+  },
+  "codeProperties": {
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "options": [
+        "",
+        "full",
+        "major",
+        "minor",
+        "half",
+        "fill"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "": "Default",
+          "full": "Full",
+          "major": "Major",
+          "minor": "Minor",
+          "half": "Half",
+          "fill": "Fill"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "MenuButton",
+    "filePath": "src/ui/primitives/Menu/Menu.tsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "description": "The label text for the trigger button."
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "description": "The variant of the trigger button.",
+      "options": [
+        "",
+        "primary",
+        "neutral",
+        "subtle"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "": "Default",
+          "primary": "Primary",
+          "neutral": "Neutral",
+          "subtle": "Subtle"
+        }
+      }
+    }
+  }
+}

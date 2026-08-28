@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "AvatarBlock",
+    "filePath": "src/ui/primitives/Avatar/Avatar.tsx"
+  },
+  "codeProperties": {
+    "title": {
+      "type": "string",
+      "name": "Title",
+      "description": "The primary label text displayed next to the avatar."
+    },
+    "description": {
+      "type": "string",
+      "name": "Description",
+      "description": "Optional secondary text displayed below the title."
+    }
+  }
+}

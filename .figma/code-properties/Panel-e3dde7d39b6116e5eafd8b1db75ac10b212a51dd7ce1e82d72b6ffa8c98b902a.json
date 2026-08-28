@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Panel",
+    "filePath": "src/ui/compositions/Sections/Panels.tsx"
+  },
+  "codeProperties": {
+    "alignPrimary": {
+      "type": "string",
+      "name": "Align Primary",
+      "defaultValue": "start",
+      "options": [
+        "start",
+        "end",
+        "center",
+        "stretch",
+        "space-between"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "start": "Start",
+          "end": "End",
+          "center": "Center",
+          "stretch": "Stretch",
+          "space-between": "Space Between"
+        }
+      }
+    },
+    "alignSecondary": {
+      "type": "string",
+      "name": "Align Secondary",
+      "defaultValue": "start",
+      "options": [
+        "start",
+        "end",
+        "center",
+        "stretch",
+        "space-between"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "start": "Start",
+          "end": "End",
+          "center": "Center",
+          "stretch": "Stretch",
+          "space-between": "Space Between"
+        }
+      }
+    },
+    "direction": {
+      "type": "string",
+      "name": "Direction",
+      "defaultValue": "row",
+      "options": [
+        "row",
+        "row-reverse",
+        "column",
+        "column-reverse"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "row": "Row",
+          "row-reverse": "Row Reverse",
+          "column": "Column",
+          "column-reverse": "Column Reverse"
+        }
+      }
+    },
+    "gap": {
+      "type": "string",
+      "name": "Gap",
+      "options": [
+        "",
+        "100",
+        "200",
+        "300",
+        "400",
+        "600",
+        "800",
+        "1200",
+        "1600"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "100": "100",
+          "200": "200",
+          "300": "300",
+          "400": "400",
+          "600": "600",
+          "800": "800",
+          "1200": "1200",
+          "1600": "1600",
+          "": "Default"
+        }
+      }
+    },
+    "type": {
+      "type": "string",
+      "name": "Type",
+      "defaultValue": "auto",
+      "options": [
+        "quarter",
+        "third",
+        "half",
+        "auto"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "quarter": "Quarter",
+          "third": "Third",
+          "half": "Half",
+          "auto": "Auto"
+        }
+      }
+    }
+  }
+}

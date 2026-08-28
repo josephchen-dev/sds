@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "AccordionItem",
+    "filePath": "src/ui/primitives/Accordion/Accordion.tsx"
+  },
+  "codeProperties": {
+    "title": {
+      "type": "string",
+      "name": "Title",
+      "description": "The title text displayed in the accordion item trigger."
+    },
+    "isExpanded": {
+      "type": "boolean",
+      "name": "Is Expanded",
+      "description": "Whether the accordion item is expanded."
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "name": "Is Disabled",
+      "description": "Whether the accordion item is disabled."
+    }
+  }
+}

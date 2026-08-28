@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Navigation",
+    "filePath": "src/ui/primitives/Navigation/Navigation.tsx"
+  },
+  "codeProperties": {
+    "direction": {
+      "type": "string",
+      "name": "Direction",
+      "defaultValue": "row",
+      "options": [
+        "column",
+        "row"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "column": "Column",
+          "row": "Row"
+        }
+      }
+    }
+  }
+}

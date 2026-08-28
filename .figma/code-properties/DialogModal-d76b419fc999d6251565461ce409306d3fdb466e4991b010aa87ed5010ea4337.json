@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "DialogModal",
+    "filePath": "src/ui/primitives/Dialog/Dialog.tsx"
+  },
+  "codeProperties": {
+    "isDismissable": {
+      "type": "boolean",
+      "name": "Is Dismissable",
+      "description": "Whether the modal can be dismissed by clicking outside or pressing Escape."
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "pointAndEdit": {
+    "priorityPaths": {
+      "prefer": [
+        "src/App.tsx",
+        "src/examples/**/*.tsx"
+      ],
+      "deprioritize": [
+        "src/data/**/*.ts",
+        "src/data/**/*.tsx",
+        "src/ui/icons/**/*.tsx"
+      ],
+      "exclude": [
+        "src/figma/**",
+        "src/stories/**",
+        "scripts/**",
+        "src/ui/images/**",
+        ".storybook/**",
+        "**/*.stories.tsx",
+        "**/*.stories.ts"
+      ]
+    },
+    "libraryPaths": {
+      "local": [
+        "src/ui/primitives/**/*.tsx",
+        "src/ui/compositions/**/*.tsx",
+        "src/ui/layout/**/*.tsx",
+        "src/ui/hooks/**/*.ts",
+        "src/ui/hooks/**/*.tsx"
+      ],
+      "external": [
+        "node_modules/react-aria-components/**"
+      ]
+    },
+    "pathClassification": {
+      "classifier": "sonnet"
+    },
+    "exclusions": [
+      {
+        "glob": "src/figma/**",
+        "reason": "All files under src/figma/ are Figma Code Connect mapping files (*.figma.tsx) and must not be selected as point-and-edit source anchors."
+      },
+      {
+        "glob": "src/stories/**",
+        "reason": "Storybook story files are documentation/catalog artifacts, not UI source anchors for rendered application UI."
+      },
+      {
+        "glob": "scripts/**",
+        "reason": "Build and tooling scripts (icon generation, token export, dev resources) are not UI source anchors."
+      },
+      {
+        "glob": "src/ui/images/**",
+        "reason": "Contains only a placeholder SVG asset and an index barrel; no renderable component logic to anchor edits to."
+      },
+      {
+        "glob": ".storybook/**",
+        "reason": "Storybook configuration files are tooling infrastructure, not UI source anchors."
+      },
+      {
+        "glob": "**/*.stories.tsx",
+        "reason": "Storybook story files are documentation/catalog artifacts, not UI source anchors."
+      },
+      {
+        "glob": "**/*.stories.ts",
+        "reason": "Storybook story files are documentation/catalog artifacts, not UI source anchors."
+      }
+    ],
+    "generated": {
+      "schemaVersion": 2,
+      "source": "setup-agent.point-and-edit-path-classifier",
+      "prompt": "same-turn-setup-subagent-v5",
+      "model": "claude-sonnet-4-6",
+      "createdAt": "2026-08-28T00:00:00.000Z",
+      "confidence": 0.92,
+      "explanation": "The repository has a clear separation between active app surfaces (src/App.tsx, src/examples/), a well-structured local design system library (src/ui/primitives/, src/ui/compositions/, src/ui/layout/), Figma Code Connect mapping files (src/figma/), and Storybook stories, making classification straightforward with high confidence."
+    }
+  }
+}

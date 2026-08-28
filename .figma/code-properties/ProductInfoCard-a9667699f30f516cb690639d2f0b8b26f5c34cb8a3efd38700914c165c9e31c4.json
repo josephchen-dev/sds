@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "ProductInfoCard",
+    "filePath": "src/ui/compositions/Cards/Cards.tsx"
+  },
+  "codeProperties": {
+    "heading": {
+      "type": "string",
+      "name": "Heading"
+    },
+    "price": {
+      "type": "string",
+      "name": "Price"
+    },
+    "description": {
+      "type": "string",
+      "name": "Description"
+    },
+    "rating": {
+      "type": "number",
+      "name": "Rating"
+    }
+  }
+}

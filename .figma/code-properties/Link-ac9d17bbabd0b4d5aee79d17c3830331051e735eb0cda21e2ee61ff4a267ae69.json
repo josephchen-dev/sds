@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Link",
+    "filePath": "src/ui/primitives/Link/Link.tsx"
+  },
+  "codeProperties": {
+    "href": {
+      "type": "string",
+      "name": "Href",
+      "description": "The URL the link points to."
+    }
+  }
+}

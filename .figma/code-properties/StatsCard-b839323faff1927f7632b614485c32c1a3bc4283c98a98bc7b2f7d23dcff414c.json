@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "StatsCard",
+    "filePath": "src/ui/compositions/Cards/Cards.tsx"
+  },
+  "codeProperties": {
+    "stat": {
+      "type": "string",
+      "name": "Stat"
+    },
+    "description": {
+      "type": "string",
+      "name": "Description"
+    }
+  }
+}

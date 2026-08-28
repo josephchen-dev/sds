@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TabPanel",
+    "filePath": "src/ui/primitives/Tab/Tab.tsx"
+  },
+  "codeProperties": {
+    "id": {
+      "type": "string",
+      "name": "ID"
+    }
+  }
+}

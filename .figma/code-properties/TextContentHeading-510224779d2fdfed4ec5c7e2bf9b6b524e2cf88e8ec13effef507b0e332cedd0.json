@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TextContentHeading",
+    "filePath": "src/ui/primitives/Text/Text.tsx"
+  },
+  "codeProperties": {
+    "align": {
+      "type": "string",
+      "name": "Align",
+      "defaultValue": "start",
+      "options": [
+        "start",
+        "center"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "start": "Start",
+          "center": "Center"
+        }
+      }
+    },
+    "heading": {
+      "type": "string",
+      "name": "Heading"
+    },
+    "subheading": {
+      "type": "string",
+      "name": "Subheading"
+    }
+  }
+}

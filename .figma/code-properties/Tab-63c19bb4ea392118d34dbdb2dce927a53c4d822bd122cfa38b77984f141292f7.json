@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Tab",
+    "filePath": "src/ui/primitives/Tab/Tab.tsx"
+  },
+  "codeProperties": {
+    "id": {
+      "type": "string",
+      "name": "ID"
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "name": "Is Disabled"
+    }
+  }
+}

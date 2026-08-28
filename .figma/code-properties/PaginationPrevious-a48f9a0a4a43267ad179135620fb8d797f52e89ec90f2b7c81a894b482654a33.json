@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "PaginationPrevious",
+    "filePath": "src/ui/primitives/Pagination/Pagination.tsx"
+  },
+  "codeProperties": {
+    "href": {
+      "type": "string",
+      "name": "Href"
+    }
+  }
+}

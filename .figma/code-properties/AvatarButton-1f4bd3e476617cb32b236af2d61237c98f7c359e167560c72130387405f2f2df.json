@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "AvatarButton",
+    "filePath": "src/ui/primitives/Avatar/Avatar.tsx"
+  },
+  "codeProperties": {
+    "src": {
+      "type": "string",
+      "name": "Image Source",
+      "description": "The URL of the avatar image."
+    },
+    "square": {
+      "type": "boolean",
+      "name": "Square",
+      "description": "Whether the avatar is square-shaped instead of circular.",
+      "defaultValue": false
+    },
+    "initials": {
+      "type": "string",
+      "name": "Initials",
+      "description": "The initials to display when no image is provided."
+    },
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "medium",
+      "options": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "small": "Small",
+          "medium": "Medium",
+          "large": "Large"
+        }
+      }
+    }
+  }
+}

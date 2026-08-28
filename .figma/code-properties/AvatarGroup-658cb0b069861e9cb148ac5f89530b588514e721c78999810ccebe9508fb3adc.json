@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "AvatarGroup",
+    "filePath": "src/ui/primitives/Avatar/Avatar.tsx"
+  },
+  "codeProperties": {
+    "max": {
+      "type": "number",
+      "name": "Max",
+      "description": "The maximum number of avatars to display before showing an overflow count.",
+      "defaultValue": 3
+    },
+    "spacing": {
+      "type": "string",
+      "name": "Spacing",
+      "defaultValue": "200",
+      "options": [
+        "100",
+        "200",
+        "300",
+        "negative-100",
+        "negative-200",
+        "negative-300"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "100": "100",
+          "200": "200",
+          "300": "300",
+          "negative-100": "Negative 100",
+          "negative-200": "Negative 200",
+          "negative-300": "Negative 300"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "PricingCard",
+    "filePath": "src/ui/compositions/Cards/Cards.tsx"
+  },
+  "codeProperties": {
+    "heading": {
+      "type": "string",
+      "name": "Heading"
+    },
+    "price": {
+      "type": "string",
+      "name": "Price"
+    },
+    "priceCurrency": {
+      "type": "string",
+      "name": "Price Currency"
+    },
+    "priceLabel": {
+      "type": "string",
+      "name": "Price Label",
+      "defaultValue": "/ mo"
+    },
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "large",
+      "options": [
+        "small",
+        "large"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "small": "Small",
+          "large": "Large"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "stroke",
+      "options": [
+        "default",
+        "stroke",
+        "brand"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "stroke": "Stroke",
+          "brand": "Brand"
+        }
+      }
+    },
+    "action": {
+      "type": "string",
+      "name": "Action"
+    },
+    "actionDisabled": {
+      "type": "boolean",
+      "name": "Action Disabled"
+    }
+  }
+}
