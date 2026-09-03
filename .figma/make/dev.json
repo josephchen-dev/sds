@@ -2,31 +2,36 @@
   "pointAndEdit": {
     "priorityPaths": {
       "prefer": [
+        "src/examples/**/*.{ts,tsx}",
         "src/App.tsx",
-        "src/examples/**/*.tsx"
+        "src/main.tsx"
       ],
       "deprioritize": [
-        "src/data/**/*.ts",
-        "src/data/**/*.tsx",
-        "src/ui/icons/**/*.tsx"
+        "src/ui/primitives/**/*.{ts,tsx}",
+        "src/ui/compositions/**/*.{ts,tsx}",
+        "src/ui/layout/**/*.{ts,tsx}",
+        "src/ui/icons/**/*.{ts,tsx}",
+        "src/ui/utils/**/*.{ts,tsx}",
+        "src/ui/hooks/**/*.{ts,tsx}",
+        "src/data/**/*.{ts,tsx}"
       ],
       "exclude": [
         "src/figma/**",
         "src/stories/**",
         "scripts/**",
-        "src/ui/images/**",
         ".storybook/**",
-        "**/*.stories.tsx",
-        "**/*.stories.ts"
+        "dist/**",
+        "node_modules/**"
       ]
     },
     "libraryPaths": {
       "local": [
-        "src/ui/primitives/**/*.tsx",
-        "src/ui/compositions/**/*.tsx",
-        "src/ui/layout/**/*.tsx",
-        "src/ui/hooks/**/*.ts",
-        "src/ui/hooks/**/*.tsx"
+        "src/ui/primitives/**/*.{ts,tsx}",
+        "src/ui/compositions/**/*.{ts,tsx}",
+        "src/ui/layout/**/*.{ts,tsx}",
+        "src/ui/icons/**/*.{ts,tsx}",
+        "src/ui/utils/**/*.{ts,tsx}",
+        "src/ui/hooks/**/*.{ts,tsx}"
       ],
       "external": [
         "node_modules/react-aria-components/**"
@@ -38,31 +43,27 @@
     "exclusions": [
       {
         "glob": "src/figma/**",
-        "reason": "All files under src/figma/ are Figma Code Connect mapping files (*.figma.tsx) and must not be selected as point-and-edit source anchors."
+        "reason": "All files under src/figma/ are Figma Code Connect mapping files (*.figma.tsx) and are not UI source anchors."
       },
       {
         "glob": "src/stories/**",
-        "reason": "Storybook story files are documentation/catalog artifacts, not UI source anchors for rendered application UI."
+        "reason": "Storybook story files are documentation/catalog artifacts, not active UI composition surfaces."
       },
       {
         "glob": "scripts/**",
-        "reason": "Build and tooling scripts (icon generation, token export, dev resources) are not UI source anchors."
-      },
-      {
-        "glob": "src/ui/images/**",
-        "reason": "Contains only a placeholder SVG asset and an index barrel; no renderable component logic to anchor edits to."
+        "reason": "Build and code-generation scripts (token exporters, icon generators, Figma plugin code) are tooling, not UI source anchors."
       },
       {
         "glob": ".storybook/**",
-        "reason": "Storybook configuration files are tooling infrastructure, not UI source anchors."
+        "reason": "Storybook configuration files are tooling config and not UI source anchors."
       },
       {
-        "glob": "**/*.stories.tsx",
-        "reason": "Storybook story files are documentation/catalog artifacts, not UI source anchors."
+        "glob": "dist/**",
+        "reason": "Build output directory; not source."
       },
       {
-        "glob": "**/*.stories.ts",
-        "reason": "Storybook story files are documentation/catalog artifacts, not UI source anchors."
+        "glob": "node_modules/**",
+        "reason": "Third-party dependencies; not project source."
       }
     ],
     "generated": {
@@ -70,9 +71,9 @@
       "source": "setup-agent.point-and-edit-path-classifier",
       "prompt": "same-turn-setup-subagent-v5",
       "model": "claude-sonnet-4-6",
-      "createdAt": "2026-08-28T00:00:00.000Z",
+      "createdAt": "2026-09-03T00:00:00.000Z",
       "confidence": 0.92,
-      "explanation": "The repository has a clear separation between active app surfaces (src/App.tsx, src/examples/), a well-structured local design system library (src/ui/primitives/, src/ui/compositions/, src/ui/layout/), Figma Code Connect mapping files (src/figma/), and Storybook stories, making classification straightforward with high confidence."
+      "explanation": "The repo is a single-workspace Vite + React design system (sds) with a clear active app rooted at src/App.tsx and src/examples/, a well-defined local UI library under src/ui/ with barrel exports and Storybook/Code Connect coverage, and Figma mapping files isolated to src/figma/, making all priority buckets straightforward to assign with high confidence."
     }
   }
 }
