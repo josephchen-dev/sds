@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TextStrong",
+    "filePath": "src/ui/primitives/Text/Text.tsx"
+  },
+  "codeProperties": {
+    "lineClamp": {
+      "type": "number",
+      "name": "Line Clamp"
+    }
+  }
+}

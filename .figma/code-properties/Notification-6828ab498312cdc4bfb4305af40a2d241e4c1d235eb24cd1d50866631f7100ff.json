@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Notification",
+    "filePath": "src/ui/primitives/Notification/Notification.tsx"
+  },
+  "codeProperties": {
+    "isDismissible": {
+      "type": "boolean",
+      "name": "Is Dismissible"
+    },
+    "icon": {
+      "type": {
+        "name": "other",
+        "value": "figma-reference"
+      },
+      "name": "Icon",
+      "control": false
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "message",
+      "options": [
+        "message",
+        "alert"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "message": "Message",
+          "alert": "Alert"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Tooltip",
+    "filePath": "src/ui/primitives/Tooltip/Tooltip.tsx"
+  },
+  "codeProperties": {
+    "offset": {
+      "type": "number",
+      "name": "Offset",
+      "defaultValue": 16
+    },
+    "placement": {
+      "type": "string",
+      "name": "Placement"
+    }
+  }
+}

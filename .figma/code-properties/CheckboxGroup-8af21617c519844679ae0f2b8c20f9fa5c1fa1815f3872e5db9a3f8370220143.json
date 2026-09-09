@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "CheckboxGroup",
+    "filePath": "src/ui/primitives/Checkbox/Checkbox.tsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "description": "The label text for the checkbox group."
+    },
+    "description": {
+      "type": "string",
+      "name": "Description",
+      "description": "Optional description text for the checkbox group."
+    },
+    "errorMessage": {
+      "type": "string",
+      "name": "Error Message",
+      "description": "Error message to display for the checkbox group."
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Card",
+    "filePath": "src/ui/compositions/Cards/Cards.tsx"
+  },
+  "codeProperties": {
+    "align": {
+      "type": "string",
+      "name": "Align",
+      "defaultValue": "start",
+      "options": [
+        "start",
+        "center",
+        "end"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "start": "Start",
+          "center": "Center",
+          "end": "End"
+        }
+      }
+    },
+    "direction": {
+      "type": "string",
+      "name": "Direction",
+      "defaultValue": "vertical",
+      "options": [
+        "horizontal",
+        "vertical"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "horizontal": "Horizontal",
+          "vertical": "Vertical"
+        }
+      }
+    },
+    "asset": {
+      "type": {
+        "name": "other",
+        "value": "figma-reference"
+      },
+      "name": "Asset",
+      "control": false
+    },
+    "padding": {
+      "type": "string",
+      "name": "Padding",
+      "options": [
+        "",
+        "600",
+        "800"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "600": "600",
+          "800": "800",
+          "": "Default"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "default",
+      "options": [
+        "default",
+        "stroke",
+        "brand"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "stroke": "Stroke",
+          "brand": "Brand"
+        }
+      }
+    }
+  }
+}

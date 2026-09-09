@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Tag",
+    "filePath": "src/ui/primitives/Tag/Tag.tsx"
+  },
+  "codeProperties": {
+    "scheme": {
+      "type": "string",
+      "name": "Scheme",
+      "defaultValue": "brand",
+      "options": [
+        "brand",
+        "danger",
+        "positive",
+        "warning",
+        "neutral"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "brand": "Brand",
+          "danger": "Danger",
+          "positive": "Positive",
+          "warning": "Warning",
+          "neutral": "Neutral"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "primary",
+      "options": [
+        "primary",
+        "secondary"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "primary": "Primary",
+          "secondary": "Secondary"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TextLinkList",
+    "filePath": "src/ui/primitives/Text/Text.tsx"
+  },
+  "codeProperties": {
+    "density": {
+      "type": "string",
+      "name": "Density",
+      "defaultValue": "default",
+      "options": [
+        "default",
+        "tight"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "default": "Default",
+          "tight": "Tight"
+        }
+      }
+    }
+  }
+}

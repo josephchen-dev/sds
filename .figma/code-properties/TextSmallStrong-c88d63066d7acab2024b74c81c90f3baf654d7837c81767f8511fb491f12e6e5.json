@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "TextSmallStrong",
+    "filePath": "src/ui/primitives/Text/Text.tsx"
+  },
+  "codeProperties": {
+    "lineHeight": {
+      "type": "string",
+      "name": "Line Height",
+      "defaultValue": "body",
+      "options": [
+        "body",
+        "single"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "body": "Body",
+          "single": "Single"
+        }
+      }
+    },
+    "lineClamp": {
+      "type": "number",
+      "name": "Line Clamp"
+    }
+  }
+}

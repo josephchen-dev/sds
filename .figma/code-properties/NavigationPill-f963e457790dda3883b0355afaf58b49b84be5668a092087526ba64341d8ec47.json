@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "NavigationPill",
+    "filePath": "src/ui/primitives/Navigation/Navigation.tsx"
+  },
+  "codeProperties": {
+    "isSelected": {
+      "type": "boolean",
+      "name": "Is Selected"
+    }
+  }
+}

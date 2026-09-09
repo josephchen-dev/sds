@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Hero",
+    "filePath": "src/ui/compositions/Sections/Heroes.tsx"
+  },
+  "codeProperties": {
+    "padding": {
+      "type": "string",
+      "name": "Padding",
+      "defaultValue": "1600",
+      "options": [
+        "600",
+        "800",
+        "1200",
+        "1600",
+        "4000"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "600": "600",
+          "800": "800",
+          "1200": "1200",
+          "1600": "1600",
+          "4000": "4000"
+        }
+      }
+    },
+    "paddingTop": {
+      "type": "string",
+      "name": "Padding Top",
+      "options": [
+        "",
+        "600",
+        "800",
+        "1200",
+        "1600",
+        "4000"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "600": "600",
+          "800": "800",
+          "1200": "1200",
+          "1600": "1600",
+          "4000": "4000",
+          "": "Default"
+        }
+      }
+    },
+    "paddingBottom": {
+      "type": "string",
+      "name": "Padding Bottom",
+      "options": [
+        "",
+        "600",
+        "800",
+        "1200",
+        "1600",
+        "4000"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "600": "600",
+          "800": "800",
+          "1200": "1200",
+          "1600": "1600",
+          "4000": "4000",
+          "": "Default"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "options": [
+        "",
+        "brand",
+        "neutral",
+        "stroke",
+        "subtle",
+        "image"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "": "Default",
+          "brand": "Brand",
+          "neutral": "Neutral",
+          "stroke": "Stroke",
+          "subtle": "Subtle",
+          "image": "Image"
+        }
+      }
+    },
+    "elementType": {
+      "type": "string",
+      "name": "Element Type",
+      "defaultValue": "section",
+      "options": [
+        "section",
+        "header",
+        "footer"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "section": "Section",
+          "header": "Header",
+          "footer": "Footer"
+        }
+      }
+    }
+  }
+}

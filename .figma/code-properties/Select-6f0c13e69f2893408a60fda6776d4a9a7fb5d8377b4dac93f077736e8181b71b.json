@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Select",
+    "filePath": "src/ui/primitives/Select/Select.tsx"
+  },
+  "codeProperties": {
+    "placeholder": {
+      "type": "string",
+      "name": "Placeholder"
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "name": "Is Disabled"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "name": "Is Required"
+    },
+    "isInvalid": {
+      "type": "boolean",
+      "name": "Is Invalid"
+    }
+  }
+}

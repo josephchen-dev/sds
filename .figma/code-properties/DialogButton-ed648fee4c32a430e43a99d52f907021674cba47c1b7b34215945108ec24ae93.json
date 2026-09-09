@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "DialogButton",
+    "filePath": "src/ui/primitives/Dialog/Dialog.tsx"
+  },
+  "codeProperties": {
+    "label": {
+      "type": "string",
+      "name": "Label",
+      "description": "The label text for the trigger button."
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "description": "The variant of the trigger button.",
+      "options": [
+        "",
+        "primary",
+        "neutral",
+        "subtle"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "": "Default",
+          "primary": "Primary",
+          "neutral": "Neutral",
+          "subtle": "Subtle"
+        }
+      }
+    },
+    "type": {
+      "type": "string",
+      "name": "Dialog Type",
+      "defaultValue": "card",
+      "options": [
+        "sheet",
+        "card"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "sheet": "Sheet",
+          "card": "Card"
+        }
+      }
+    }
+  }
+}

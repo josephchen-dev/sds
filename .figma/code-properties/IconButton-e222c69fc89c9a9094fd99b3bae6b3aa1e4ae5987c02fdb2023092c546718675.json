@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "IconButton",
+    "filePath": "src/ui/primitives/IconButton/IconButton.tsx"
+  },
+  "codeProperties": {
+    "size": {
+      "type": "string",
+      "name": "Size",
+      "defaultValue": "medium",
+      "options": [
+        "small",
+        "medium"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "small": "Small",
+          "medium": "Medium"
+        }
+      }
+    },
+    "variant": {
+      "type": "string",
+      "name": "Variant",
+      "defaultValue": "primary",
+      "options": [
+        "primary",
+        "neutral",
+        "subtle"
+      ],
+      "control": {
+        "type": "select",
+        "labels": {
+          "primary": "Primary",
+          "neutral": "Neutral",
+          "subtle": "Subtle"
+        }
+      }
+    }
+  }
+}

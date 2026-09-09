@@ -1,0 +1,79 @@
+{
+  "pointAndEdit": {
+    "priorityPaths": {
+      "prefer": [
+        "src/examples/**/*.{ts,tsx}",
+        "src/App.tsx",
+        "src/main.tsx"
+      ],
+      "deprioritize": [
+        "src/ui/primitives/**/*.{ts,tsx}",
+        "src/ui/compositions/**/*.{ts,tsx}",
+        "src/ui/layout/**/*.{ts,tsx}",
+        "src/ui/icons/**/*.{ts,tsx}",
+        "src/ui/utils/**/*.{ts,tsx}",
+        "src/ui/hooks/**/*.{ts,tsx}",
+        "src/data/**/*.{ts,tsx}"
+      ],
+      "exclude": [
+        "src/figma/**",
+        "src/stories/**",
+        "scripts/**",
+        ".storybook/**",
+        "dist/**",
+        "node_modules/**"
+      ]
+    },
+    "libraryPaths": {
+      "local": [
+        "src/ui/primitives/**/*.{ts,tsx}",
+        "src/ui/compositions/**/*.{ts,tsx}",
+        "src/ui/layout/**/*.{ts,tsx}",
+        "src/ui/icons/**/*.{ts,tsx}",
+        "src/ui/utils/**/*.{ts,tsx}",
+        "src/ui/hooks/**/*.{ts,tsx}"
+      ],
+      "external": [
+        "node_modules/react-aria-components/**"
+      ]
+    },
+    "pathClassification": {
+      "classifier": "sonnet"
+    },
+    "exclusions": [
+      {
+        "glob": "src/figma/**",
+        "reason": "All files under src/figma/ are Figma Code Connect mapping files (*.figma.tsx) and are not UI source anchors."
+      },
+      {
+        "glob": "src/stories/**",
+        "reason": "Storybook story files are documentation/catalog artifacts, not active UI composition surfaces."
+      },
+      {
+        "glob": "scripts/**",
+        "reason": "Build and code-generation scripts (token exporters, icon generators, Figma plugin code) are tooling, not UI source anchors."
+      },
+      {
+        "glob": ".storybook/**",
+        "reason": "Storybook configuration files are tooling config and not UI source anchors."
+      },
+      {
+        "glob": "dist/**",
+        "reason": "Build output directory; not source."
+      },
+      {
+        "glob": "node_modules/**",
+        "reason": "Third-party dependencies; not project source."
+      }
+    ],
+    "generated": {
+      "schemaVersion": 2,
+      "source": "setup-agent.point-and-edit-path-classifier",
+      "prompt": "same-turn-setup-subagent-v5",
+      "model": "claude-sonnet-4-6",
+      "createdAt": "2026-09-03T00:00:00.000Z",
+      "confidence": 0.92,
+      "explanation": "The repo is a single-workspace Vite + React design system (sds) with a clear active app rooted at src/App.tsx and src/examples/, a well-defined local UI library under src/ui/ with barrel exports and Storybook/Code Connect coverage, and Figma mapping files isolated to src/figma/, making all priority buckets straightforward to assign with high confidence."
+    }
+  }
+}

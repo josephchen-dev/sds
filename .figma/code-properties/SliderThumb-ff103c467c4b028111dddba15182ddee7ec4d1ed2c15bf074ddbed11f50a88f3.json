@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "SliderThumb",
+    "filePath": "src/ui/primitives/Slider/Slider.tsx"
+  },
+  "codeProperties": {
+    "index": {
+      "type": "number",
+      "name": "Index"
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "name": "Is Disabled"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "componentName": "Table",
+    "filePath": "src/ui/primitives/Table/Table.tsx"
+  },
+  "codeProperties": {
+    "bleed": {
+      "type": "boolean",
+      "name": "Bleed",
+      "defaultValue": false
+    },
+    "dense": {
+      "type": "boolean",
+      "name": "Dense",
+      "defaultValue": false
+    },
+    "grid": {
+      "type": "boolean",
+      "name": "Grid",
+      "defaultValue": false
+    },
+    "striped": {
+      "type": "boolean",
+      "name": "Striped",
+      "defaultValue": false
+    }
+  }
+}

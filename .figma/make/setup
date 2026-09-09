@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Runs once on first open. System-level prerequisites.
+set -euo pipefail
+
+# Nothing to install system-wide: this project only needs Node.js + npm,
+# which the host environment already provides.
+node --version
+npm --version
+
+echo "setup: ok"

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Verifies the dev server is reachable.
+set -euo pipefail
+
+. "$(dirname "$0")/env"
+
+for i in $(seq 1 30); do
+  if curl -sSf "http://localhost:${PORT}" >/dev/null 2>&1; then
+    echo "verify: ok (http://localhost:${PORT})"
+    exit 0
+  fi
+  sleep 1
+done
+
+echo "verify: dev server not reachable on port ${PORT}" >&2
+exit 1
