@@ -65,7 +65,7 @@ export function Demo() {
               <div key={v} style={{ display: "contents" }}>
                 <span className="button-showcase-label">{v.replace("danger-", "")}</span>
                 <ButtonDanger variant={v} className={v === "danger-primary" ? "showcase-beige-danger" : undefined} onPress={noop}>Delete project</ButtonDanger>
-                <ButtonDanger variant={v} size="small" onPress={noop}>Delete</ButtonDanger>
+                <ButtonDanger variant={v} size="small" className={v === "danger-primary" ? "showcase-beige-danger" : undefined} onPress={noop}>Delete</ButtonDanger>
               </div>
             ))}
           </div>
