@@ -1,0 +1,10 @@
+{
+  "description": "Streamlines project setup by automating bootstrap, deployment preparation, and verification to ensure smooth initial imports and reliable builds.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
