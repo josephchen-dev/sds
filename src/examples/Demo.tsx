@@ -64,7 +64,7 @@ export function Demo() {
             {dangerVariants.map((v) => (
               <div key={v} style={{ display: "contents" }}>
                 <span className="button-showcase-label">{v.replace("danger-", "")}</span>
-                <ButtonDanger variant={v} onPress={noop}>Delete project</ButtonDanger>
+                <ButtonDanger variant={v} className={v === "danger-primary" ? "showcase-beige-danger" : undefined} onPress={noop}>Delete project</ButtonDanger>
                 <ButtonDanger variant={v} size="small" onPress={noop}>Delete</ButtonDanger>
               </div>
             ))}

@@ -51,3 +51,12 @@
     grid-template-columns: 1fr;
   }
 }
+.button.button-variant-danger-primary.showcase-beige-danger {
+  --button-background-color: #e8dcc4;
+  --button-border-color: #d3c3a2;
+  --button-color: #4a3b22;
+  &[data-hovered]:not([data-disabled]) {
+    --button-background-color: #dccdad;
+    --button-border-color: #c4b189;
+  }
+}
